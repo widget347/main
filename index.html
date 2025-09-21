@@ -36,35 +36,53 @@
             border-radius: 8px;
         }
         
-        /* Very minimal title for page only, won't affect Discord embed */
         .page-title {
             color: #FF6B93;
             font-size: 16px;
             margin-bottom: 10px;
-            display: none; /* Hidden by default */
+            display: none;
         }
 
-        /* Bottom Bar Styles */
-        .bottom-bar {
+        /* Bottom Menu Bar */
+        #bottom-menu {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: black;
-            text-align: center;
-            padding: 40px 0; /* increased height */
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 17px 34px;
             z-index: 1000;
+            color: white;
+            font-size: 26.5px;
         }
 
-        .bottom-bar a {
-            color: #5865F2; /* Discord blue */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 48px; /* increased text size */
+        #bottom-menu .center-text {
+            font-weight: normal; 
         }
 
-        .bottom-bar a:hover {
-            text-decoration: underline;
+        #bottom-menu a {
+            text-decoration: none !important; 
+            border: none !important;           
+            outline: none !important;          
+        }
+
+        #bottom-menu img {
+            height: 68px;
+            width: auto;
+            cursor: pointer;
+            display: block;
+            vertical-align: middle;
+        }
+
+        #bottom-menu .right-icons {
+            position: absolute;
+            right: 78px; /* moved 3px right */
+            display: flex;
+            gap: 21.6px; /* 4px closer */
+            align-items: center;
         }
     </style>
 </head>
@@ -74,13 +92,20 @@
         <img src="https://i.imgur.com/wEuoSWZ.jpeg" alt="Marin Kitagawa">
     </div>
 
-    <!-- Bottom Bar -->
-    <div class="bottom-bar">
-        <a href="https://discord.com/invite/ZkxkHcH8uw" target="_blank">Discord</a>
+    <!-- Bottom Menu Bar -->
+    <div id="bottom-menu">
+        <div class="center-text">Marin Kitagawa</div>
+        <div class="right-icons">
+            <a href="https://discord.com/invite/ZkxkHcH8uw" target="_blank">
+                <img src="https://i.imgur.com/mOuB7QD.png" alt="Discord">
+            </a>
+            <a href="https://youtube.com/@widget347u" target="_blank">
+                <img src="https://i.imgur.com/jMFzlex.png" alt="YouTube">
+            </a>
+        </div>
     </div>
-    
+
     <script>
-        // Optional: Show title on page if URL has #show-title parameter
         if (window.location.hash === '#show-title') {
             document.querySelector('.page-title').style.display = 'block';
         }

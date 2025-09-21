@@ -1,114 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marin Kitagawa</title>
-    
-    <!-- Discord Embed Metadata -->
-    <meta property="og:title" content="Marin Kitagawa">
-    <meta property="og:description" content="Marin Kitagawa">
-    <meta property="og:image" content="https://i.imgur.com/wEuoSWZ.jpeg">
-    <meta property="og:url" content="https://yourdomain.com/kitagawa.html">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#FF6B93">
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        
-        .container {
-            text-align: center;
-        }
-        
-        img {
-            max-width: 100%;
-            max-height: 100vh;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-        
-        .page-title {
-            color: #FF6B93;
-            font-size: 16px;
-            margin-bottom: 10px;
-            display: none;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marin Kitagawa</title>
 
-        /* Bottom Menu Bar */
-        #bottom-menu {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 17px 34px;
-            z-index: 1000;
-            color: white;
-            font-size: 26.5px;
-        }
+<!-- Discord Embed Metadata -->
+<meta property="og:title" content="Marin Kitagawa">
+<meta property="og:description" content="Marin Kitagawa">
+<meta property="og:image" content="https://i.imgur.com/wEuoSWZ.jpeg">
+<meta property="og:url" content="https://yourdomain.com/kitagawa.html">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FF6B93">
 
-        #bottom-menu .center-text {
-            font-weight: normal; 
-        }
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
 
-        #bottom-menu a {
-            text-decoration: none !important; 
-            border: none !important;           
-            outline: none !important;          
-        }
+    .container {
+        text-align: center;
+    }
 
-        #bottom-menu img {
-            height: 68px;
-            width: auto;
-            cursor: pointer;
-            display: block;
-            vertical-align: middle;
-        }
+    img {
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: contain;
+        border-radius: 8px;
+    }
 
-        #bottom-menu .right-icons {
-            position: absolute;
-            right: 78px; /* moved 3px right */
-            display: flex;
-            gap: 21.6px; /* 4px closer */
-            align-items: center;
+    .page-title {
+        color: #FF6B93;
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    /* Bottom Menu Bar */
+    #bottom-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 17px 34px;
+        z-index: 1000;
+        color: white;
+        font-size: 26.5px;
+
+        /* Slide and fade animation */
+        animation: slideUpFade 0.533s ease-out forwards; /* 1.5x speed */
+    }
+
+    #bottom-menu .center-text {
+        font-weight: normal;
+    }
+
+    #bottom-menu a {
+        text-decoration: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    #bottom-menu img {
+        height: 68px;
+        width: auto;
+        cursor: pointer;
+        display: block;
+        vertical-align: middle;
+    }
+
+    #bottom-menu .right-icons {
+        position: absolute;
+        right: 78px;
+        display: flex;
+        gap: 21.6px;
+        align-items: center;
+        /* Follow bar animation */
+    }
+
+    @keyframes slideUpFade {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
         }
-    </style>
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="page-title">Marin Kitagawa</div>
-        <img src="https://i.imgur.com/wEuoSWZ.jpeg" alt="Marin Kitagawa">
-    </div>
+<div class="container">
+    <div class="page-title">Marin Kitagawa</div>
+    <img src="https://i.imgur.com/wEuoSWZ.jpeg" alt="Marin Kitagawa">
+</div>
 
-    <!-- Bottom Menu Bar -->
-    <div id="bottom-menu">
-        <div class="center-text">Marin Kitagawa</div>
-        <div class="right-icons">
-            <a href="https://discord.com/invite/ZkxkHcH8uw" target="_blank">
-                <img src="https://i.imgur.com/mOuB7QD.png" alt="Discord">
-            </a>
-            <a href="https://youtube.com/@widget347u" target="_blank">
-                <img src="https://i.imgur.com/jMFzlex.png" alt="YouTube">
-            </a>
-        </div>
+<!-- Bottom Menu Bar -->
+<div id="bottom-menu">
+    <div class="center-text">Marin Kitagawa</div>
+    <div class="right-icons">
+        <a href="https://discord.com/invite/ZkxkHcH8uw" target="_blank">
+            <img src="https://i.imgur.com/mOuB7QD.png" alt="Discord">
+        </a>
+        <a href="https://youtube.com/@widget347u" target="_blank">
+            <img src="https://i.imgur.com/jMFzlex.png" alt="YouTube">
+        </a>
     </div>
+</div>
 
-    <script>
-        if (window.location.hash === '#show-title') {
-            document.querySelector('.page-title').style.display = 'block';
-        }
-    </script>
+<script>
+    if (window.location.hash === '#show-title') {
+        document.querySelector('.page-title').style.display = 'block';
+    }
+</script>
 </body>
 </html>

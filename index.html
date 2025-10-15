@@ -121,6 +121,16 @@
 </div>
 
 <script>
+    // Detect mobile devices
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Remove the "Marin Kitagawa" text from the bottom menu
+        const centerText = document.querySelector('#bottom-menu .center-text');
+        if (centerText) centerText.remove();
+    }
+
+    // Optional: Show page-title if hash is present
     if (window.location.hash === '#show-title') {
         document.querySelector('.page-title').style.display = 'block';
     }

@@ -57,9 +57,7 @@
         z-index: 1000;
         color: white;
         font-size: 26.5px;
-
-        /* Slide and fade animation */
-        animation: slideUpFade 0.533s ease-out forwards; /* 1.5x speed */
+        animation: slideUpFade 0.533s ease-out forwards;
     }
 
     #bottom-menu .center-text {
@@ -78,6 +76,11 @@
         cursor: pointer;
         display: block;
         vertical-align: middle;
+        transition: opacity 0.3s ease;
+    }
+
+    #bottom-menu img:hover {
+        opacity: 0.7;
     }
 
     #bottom-menu .right-icons {
@@ -86,7 +89,6 @@
         display: flex;
         gap: 21.6px;
         align-items: center;
-        /* Follow bar animation */
     }
 
     @keyframes slideUpFade {
@@ -116,6 +118,9 @@
         </a>
         <a href="https://youtube.com/@widget347u" target="_blank">
             <img src="https://i.imgur.com/jMFzlex.png" alt="YouTube">
+        </a>
+        <a href="https://links.marinkitagawa.com" target="_blank">
+            <img src="https://i.imgur.com/RY0YIJO.png" alt="Links">
         </a>
     </div>
 </div>
